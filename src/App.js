@@ -24,10 +24,10 @@ function App() {
       Our Team Careers Contact
       <div className="attribution">
         Challenge by{' '}
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">
           Frontend Mentor
         </a>
-        . Coded by <a href="#">Aciel Ochoa</a>.
+        . Coded by <a href="https://acielochoa.com" target="_blank" rel="noopener noreferrer">Aciel Ochoa</a>.
       </div>
     </div>
   );
