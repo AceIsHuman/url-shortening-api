@@ -1,6 +1,7 @@
 import React from 'react';
 import NavBar from './components/NavBar';
 import Banner from './components/Banner';
+import URLForm from './components/URLForm';
 
 import './App.css';
 
@@ -9,6 +10,7 @@ function App() {
     <div>
       <NavBar />
       <Banner />
+      <URLForm />
       Shorten It! Advanced Statistics Track how your
       links are performing across the web with our advanced statistics
       dashboard. Brand Recognition Boost your brand recognition with each click.
