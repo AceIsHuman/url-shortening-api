@@ -1,14 +1,15 @@
 import React from 'react';
 import NavBar from './components/NavBar';
+import Banner from './components/Banner';
+
 import './App.css';
 
 function App() {
   return (
     <div>
       <NavBar />
-      More than just shorter links
-      Build your brand’s recognition and get detailed insights on how your links
-      are performing. Get Started Shorten It! Advanced Statistics Track how your
+      <Banner />
+      Shorten It! Advanced Statistics Track how your
       links are performing across the web with our advanced statistics
       dashboard. Brand Recognition Boost your brand recognition with each click.
       Generic links don’t mean a thing. Branded links help instil confidence in
