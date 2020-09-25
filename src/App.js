@@ -3,6 +3,7 @@ import NavBar from './components/NavBar';
 import Banner from './components/Banner';
 import URLForm from './components/URLForm';
 import Staircase from './components/Staircase';
+import BottomCTA from './components/BottomCTA';
 
 import './App.css';
 
@@ -13,7 +14,8 @@ function App() {
       <Banner />
       <URLForm />
       <Staircase />
-      Boost your links today Get Started Features Link Shortening
+      <BottomCTA />
+      Features Link Shortening
       Branded Links Analytics Resources Blog Developers Support Company About
       Our Team Careers Contact
       <div className="attribution">
