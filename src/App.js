@@ -4,6 +4,7 @@ import Banner from './components/Banner';
 import URLForm from './components/URLForm';
 import Staircase from './components/Staircase';
 import BottomCTA from './components/BottomCTA';
+import Footer from './components/Footer';
 
 import './App.css';
 
@@ -15,9 +16,7 @@ function App() {
       <URLForm />
       <Staircase />
       <BottomCTA />
-      Features Link Shortening
-      Branded Links Analytics Resources Blog Developers Support Company About
-      Our Team Careers Contact
+      <Footer />
       <div className="attribution">
         Challenge by{' '}
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">
