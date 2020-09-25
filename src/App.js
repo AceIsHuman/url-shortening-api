@@ -1,10 +1,12 @@
 import React from 'react';
+import NavBar from './components/NavBar';
 import './App.css';
 
 function App() {
   return (
     <div>
-      Features Pricing Resources Login Sign Up More than just shorter links
+      <NavBar />
+      More than just shorter links
       Build your brand’s recognition and get detailed insights on how your links
       are performing. Get Started Shorten It! Advanced Statistics Track how your
       links are performing across the web with our advanced statistics
