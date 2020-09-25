@@ -2,12 +2,12 @@ import React from 'react';
 
 function URLForm() {
   return (
-    <section class="url-form">
-      <form id="shortly-form" autocomplete="off">
+    <section className="url-form">
+      <form id="shortly-form" autoComplete="off">
         <input
           id="url"
           name="url"
-          class="sortly-input"
+          className="sortly-input"
           type="url"
           placeholder="Shorten a link here..."
         />
