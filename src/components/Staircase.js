@@ -7,15 +7,15 @@ import fullyCustomizableIcon from '../images/icon-fully-customizable.svg';
 
 function Staircase() {
   return (
-    <section class="staircase-container">
-      <div class="staircase-header">
-        <h3 class="staircase-header-title">Advanced Statistics</h3>
-        <span class="staircase-header-text">
+    <section className="staircase-container">
+      <div className="staircase-header">
+        <h3 className="staircase-header-title">Advanced Statistics</h3>
+        <span className="staircase-header-text">
           Track how your links are performing across the web with our advanced
           statistics dashboard.
         </span>
       </div>
-      <div class="staircase">
+      <div className="staircase">
         <StaircaseCard
           icon={brandRecognitionIcon}
           alt="brand-recognition-icon"
