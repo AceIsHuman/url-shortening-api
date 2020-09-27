@@ -11,7 +11,7 @@ import './main.css';
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <NavBar />
       <Banner />
       <URLForm />
