@@ -1,0 +1,43 @@
+.nav-bar {
+  margin: 1rem @margin-spacing;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: @palette-font-secondary;
+
+    .links {
+      display: flex;
+      justify-content: space-around;
+      width: 30rem;
+    }
+
+    .login-signup {
+      width: 18rem;
+      display: flex;
+      justify-content: space-between;
+
+      .login-btn {
+        background-color: #ffffff;
+
+        &:hover {
+          background-color: darken(#ffffff, 10%);
+        }
+      }
+
+      .sign-up-btn {
+        background-color: @palette-secondary;
+        color: #ffffff;
+
+        &:hover {
+          background-color: darken(@palette-secondary, 10%);
+        }
+      }
+    }
+  }
+}
