@@ -11,7 +11,7 @@ function URLForm() {
           type="url"
           placeholder="Shorten a link here..."
         />
-        <input type="submit" value="Shorten It!" />
+        <input id="submit" type="submit" value="Shorten It!" />
       </form>
     </section>
   );
