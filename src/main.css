@@ -1,7 +1,52 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.nav-bar {
+  margin: 1rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-bar .navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: #4b5043;
+}
+.nav-bar .navigation .links {
+  display: flex;
+  justify-content: space-around;
+  width: 30rem;
+}
+.nav-bar .navigation .login-signup {
+  width: 18rem;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-bar .navigation .login-signup .login-btn {
+  background-color: #ffffff;
+}
+.nav-bar .navigation .login-signup .login-btn:hover {
+  background-color: #e6e6e6;
+}
+.nav-bar .navigation .login-signup .sign-up-btn {
+  background-color: #00b4d8;
+  color: #ffffff;
+}
+.nav-bar .navigation .login-signup .sign-up-btn:hover {
+  background-color: #0089a5;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+button {
+  border-radius: 2rem;
+  text-align: center;
+  padding: 0.4rem 1rem;
+  width: 8rem;
 }
