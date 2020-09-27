@@ -5,6 +5,15 @@ h1 {
   font-size: 4rem;
   color: #222222;
 }
+button {
+  border-radius: 2rem;
+  text-align: center;
+  padding: 0.4rem 1rem;
+  width: 8rem;
+}
+input {
+  border-radius: 0.7rem;
+}
 .nav-bar {
   margin: 1rem auto;
   max-width: 80rem;
@@ -56,7 +65,7 @@ h1 {
 .banner .cta-container .cta-tagline {
   font-size: 1.5rem;
   color: #4b5043;
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 .banner .cta-container .cta-button {
   background-color: #00b4d8;
@@ -68,16 +77,38 @@ h1 {
   position: relative;
   right: -8rem;
 }
+.url-form {
+  background-color: #493657;
+  background-image: url('./images/bg-shorten-desktop.svg');
+  background-size: contain;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 3rem;
+  border-radius: 0.5rem;
+}
+.url-form #shortly-form {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 1rem;
+}
+.url-form #shortly-form #url {
+  width: 78%;
+  padding: 1.5rem;
+  background-color: #FFFFFF;
+  color: #4b5043;
+}
+.url-form #shortly-form #submit {
+  width: 20%;
+  background-color: #00b4d8;
+  padding: 1.5rem;
+  text-align: center;
+  color: #FFFFFF;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
-}
-button {
-  border-radius: 2rem;
-  text-align: center;
-  padding: 0.4rem 1rem;
-  width: 8rem;
 }
