@@ -1,0 +1,31 @@
+.url-form {
+  background-color: @palette-primary;
+  background-image: url('./images/bg-shorten-desktop.svg');
+  background-size: contain;
+  max-width: @app-width;
+  margin: 0 auto;
+  padding: 3rem;
+  border-radius: 0.5rem;
+
+  #shortly-form {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 1rem;
+
+    #url {
+      width: 78%;
+      padding: 1.5rem;
+      background-color: #FFFFFF;
+      color: @palette-font-secondary;
+    }
+    
+    #submit {
+      width: 20%;
+      background-color: @palette-secondary;
+      padding: 1.5rem;
+      text-align: center;
+      color: #FFFFFF;
+    }
+  }
+}
