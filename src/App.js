@@ -7,7 +7,7 @@ import BottomCTA from './components/BottomCTA';
 import Footer from './components/Footer';
 import Attribution from './components/Attribution';
 
-import './App.css';
+import './main.css';
 
 function App() {
   return (
