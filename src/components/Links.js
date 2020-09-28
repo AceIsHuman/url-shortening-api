@@ -14,7 +14,7 @@ function Link(props) {
   return (
     <div className="link-card">
       <span className="full-url">{props.link.url}</span>
-      <div className="shortyly-url-container">
+      <div className="shortly-url-container">
         <span className="shortly-url">{'https://rel.ink/' + props.link.hashid}</span>
         <button className="copy-btn">Copy</button>
       </div>
