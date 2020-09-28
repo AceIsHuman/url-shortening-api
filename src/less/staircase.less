@@ -1,0 +1,70 @@
+.staircase-container {
+  background-color: #d4d4d4;
+  width: 100%;
+  padding: 81px 0;
+  position: relative;
+  top: -81px;
+
+  .staircase-header {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    padding: 5rem 0;
+    margin-bottom: 5rem;
+
+    .staircase-header-title {
+      margin-bottom: 1rem;
+    }
+
+    .staircase-header-text {
+      max-width: 30rem;
+      display: flex;
+    }
+  }
+
+  .staircase {
+    max-width: @app-width;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .staircase-card {
+      width: 32%;
+      padding: 1rem;
+      background-color: #ffffff;
+      border-radius: 0.5rem;
+      position: relative;
+
+      &:nth-child(1) {
+        top: -2rem;
+      }
+      &:nth-child(3) {
+        top: 2rem;
+      }
+
+      .staircase-icon {
+        position: relative;
+        top: -50px;
+        border-radius: 3rem;
+        background-color: @palette-primary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 4.5rem;
+        height: 4.5rem;
+      }
+
+      .staircase-card-title {
+        position: relative;
+        top: -20px;
+      }
+
+      .staircase-card-text {
+        position: relative;
+        top: -10px;
+      }
+    }
+  }
+}
