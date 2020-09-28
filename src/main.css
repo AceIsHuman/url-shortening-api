@@ -1,9 +1,33 @@
 body {
   font-family: 'Roboto', sans-serif;
+  color: #4b5043;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #222222;
+  font-weight: 600;
 }
 h1 {
   font-size: 4rem;
-  color: #222222;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.4rem;
+}
+h4 {
+  font-size: 1.8rem;
+}
+h5 {
+  font-size: 1.6rem;
+}
+h6 {
+  font-size: 1.5rem;
 }
 button {
   border-radius: 2rem;
@@ -16,7 +40,7 @@ input {
 }
 .nav-bar {
   margin: 1rem auto;
-  max-width: 80rem;
+  max-width: 70rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,7 +78,7 @@ input {
 .banner {
   margin: 3rem auto;
   display: flex;
-  max-width: 80rem;
+  max-width: 70rem;
 }
 .banner .cta-container {
   width: 55%;
@@ -81,10 +105,12 @@ input {
   background-color: #493657;
   background-image: url('./images/bg-shorten-desktop.svg');
   background-size: contain;
-  max-width: 80rem;
+  max-width: 70rem;
   margin: 0 auto;
   padding: 3rem;
   border-radius: 0.5rem;
+  position: relative;
+  z-index: 1;
 }
 .url-form #shortly-form {
   display: flex;
@@ -104,6 +130,67 @@ input {
   padding: 1.5rem;
   text-align: center;
   color: #FFFFFF;
+}
+.staircase-container {
+  background-color: #d4d4d4;
+  width: 100%;
+  padding: 81px 0;
+  position: relative;
+  top: -81px;
+}
+.staircase-container .staircase-header {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+  padding: 5rem 0;
+  margin-bottom: 5rem;
+}
+.staircase-container .staircase-header .staircase-header-title {
+  margin-bottom: 1rem;
+}
+.staircase-container .staircase-header .staircase-header-text {
+  max-width: 30rem;
+  display: flex;
+}
+.staircase-container .staircase {
+  max-width: 70rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.staircase-container .staircase .staircase-card {
+  width: 32%;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  position: relative;
+}
+.staircase-container .staircase .staircase-card:nth-child(1) {
+  top: -2rem;
+}
+.staircase-container .staircase .staircase-card:nth-child(3) {
+  top: 2rem;
+}
+.staircase-container .staircase .staircase-card .staircase-icon {
+  position: relative;
+  top: -50px;
+  border-radius: 3rem;
+  background-color: #493657;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.5rem;
+  height: 4.5rem;
+}
+.staircase-container .staircase .staircase-card .staircase-card-title {
+  position: relative;
+  top: -20px;
+}
+.staircase-container .staircase .staircase-card .staircase-card-text {
+  position: relative;
+  top: -10px;
 }
 .attribution {
   font-size: 11px;
