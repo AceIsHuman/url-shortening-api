@@ -1,13 +1,16 @@
 import React from 'react';
 
 import StaircaseCard from './StaircaseCard';
+import Links from './Links';
+
 import brandRecognitionIcon from '../images/icon-brand-recognition.svg';
 import detailedRecordsIcon from '../images/icon-detailed-records.svg';
 import fullyCustomizableIcon from '../images/icon-fully-customizable.svg';
 
-function Staircase() {
+function Staircase(props) {
   return (
     <section className="staircase-container">
+      <Links links={props.links} />
       <div className="staircase-header">
         <h3 className="staircase-header-title">Advanced Statistics</h3>
         <span className="staircase-header-text">
@@ -23,7 +26,7 @@ function Staircase() {
           text="Boost your brand recognition with each click.
           Generic links don’t mean a thing. Branded links help instil confidence in
           your content."
-          />
+        />
         <StaircaseCard
           icon={detailedRecordsIcon}
           alt="detailed-records-icon"
@@ -31,7 +34,7 @@ function Staircase() {
           text="Gain insights into who is clicking your
           links. Knowing when and where people engage with your content helps inform
           better decisions."
-          />
+        />
         <StaircaseCard
           icon={fullyCustomizableIcon}
           alt="fully-customizable-icon"
