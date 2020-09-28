@@ -58,6 +58,12 @@ input {
   justify-content: space-around;
   width: 30rem;
 }
+.nav-bar .navigation .links a {
+  color: #4b5043;
+}
+.nav-bar .navigation .links a:hover {
+  color: #000000;
+}
 .nav-bar .navigation .login-signup {
   width: 18rem;
   display: flex;
@@ -65,16 +71,18 @@ input {
 }
 .nav-bar .navigation .login-signup .login-btn {
   background-color: #ffffff;
+  color: #222222;
 }
 .nav-bar .navigation .login-signup .login-btn:hover {
   background-color: #e6e6e6;
+  color: #080808;
 }
 .nav-bar .navigation .login-signup .sign-up-btn {
   background-color: #00b4d8;
   color: #ffffff;
 }
 .nav-bar .navigation .login-signup .sign-up-btn:hover {
-  background-color: #0089a5;
+  background-color: #0cd6ff;
 }
 .banner {
   margin: 3rem auto;
@@ -97,6 +105,9 @@ input {
   color: #FFFFFF;
   font-size: 1.5rem;
   width: 12rem;
+}
+.banner .cta-container .cta-button:hover {
+  background-color: #0cd6ff;
 }
 .banner img {
   position: relative;
@@ -132,6 +143,9 @@ input {
   text-align: center;
   color: #FFFFFF;
 }
+.url-form #shortly-form #submit:hover {
+  background-color: #0cd6ff;
+}
 .links-container {
   position: relative;
   z-index: 1;
@@ -143,7 +157,7 @@ input {
   justify-content: space-between;
   align-items: center;
   font-size: 1.5rem;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 1.5rem;
   margin: 1rem 0;
   border-radius: 0.2rem;
@@ -151,15 +165,26 @@ input {
 .links-container .link-card .full-url {
   color: #222222;
 }
+.links-container .link-card .shortly-url-container {
+  display: flex;
+  align-items: center;
+}
 .links-container .link-card .shortly-url-container .shortly-url {
   color: #00b4d8;
   margin-right: 1rem;
 }
 .links-container .link-card .shortly-url-container .copy-btn {
+  color: #ffffff;
   background-color: #00b4d8;
 }
 .links-container .link-card .shortly-url-container .copy-btn:hover {
-  background-color: #3c2c47;
+  background-color: #0cd6ff;
+}
+.links-container .link-card .shortly-url-container .copied-btn {
+  background-color: #493657;
+}
+.links-container .link-card .shortly-url-container .copied-btn:hover {
+  background-color: #493657;
 }
 .staircase-container {
   background-color: #d4d4d4;

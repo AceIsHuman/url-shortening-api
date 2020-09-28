@@ -3,13 +3,13 @@
   z-index: 1;
   max-width: @app-width;
   margin: 0 auto;
-  
+
   .link-card {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 1.5rem;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     padding: 1.5rem;
     margin: 1rem 0;
     border-radius: 0.2rem;
@@ -19,14 +19,24 @@
     }
 
     .shortly-url-container {
+      display: flex;
+      align-items: center;
+
       .shortly-url {
         color: @palette-secondary;
         margin-right: 1rem;
       }
       .copy-btn {
+        color: #ffffff;
         background-color: @palette-secondary;
         &:hover {
-          background-color: darken(@palette-primary, 5%);
+          background-color: lighten(@palette-secondary, 10%);
+        }
+      }
+      .copied-btn {
+        background-color: @palette-primary;
+        &:hover {
+          background-color: @palette-primary;
         }
       }
     }

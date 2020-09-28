@@ -16,6 +16,12 @@
       display: flex;
       justify-content: space-around;
       width: 30rem;
+      a {
+        color: @palette-font-secondary;
+        &:hover {
+          color: darken(@palette-font-secondary, 30%);
+        }
+      }
     }
 
     .login-signup {
@@ -25,9 +31,11 @@
 
       .login-btn {
         background-color: #ffffff;
+        color: @palette-font-primary;
 
         &:hover {
           background-color: darken(#ffffff, 10%);
+          color: darken(@palette-font-primary, 10%);
         }
       }
 
@@ -36,7 +44,7 @@
         color: #ffffff;
 
         &:hover {
-          background-color: darken(@palette-secondary, 10%);
+          background-color: lighten(@palette-secondary, 10%);
         }
       }
     }
