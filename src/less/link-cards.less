@@ -1,0 +1,34 @@
+.links-container {
+  position: relative;
+  z-index: 1;
+  max-width: @app-width;
+  margin: 0 auto;
+  
+  .link-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: #FFFFFF;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 0.2rem;
+
+    .full-url {
+      color: @palette-font-primary;
+    }
+
+    .shortly-url-container {
+      .shortly-url {
+        color: @palette-secondary;
+        margin-right: 1rem;
+      }
+      .copy-btn {
+        background-color: @palette-secondary;
+        &:hover {
+          background-color: darken(@palette-primary, 5%);
+        }
+      }
+    }
+  }
+}
