@@ -1,17 +1,25 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-function URLForm() {
+function URLForm(props) {
   const [url, setUrl] = useState('');
 
   const handleChange = e => {
     setUrl(e.target.value);
-  }
+  };
 
   const handleSubmit = e => {
-    e.preventdefault();
-    axios.post('https://rel.ink/api/links/', url).then(res => console.log(res)).catch(res=> console.error(res.data));
-  }
+    e.preventDefault();
+    axios
+      .post('https://rel.ink/api/links/', { url })
+      .then(res => {
+        const { data } = res;
+        props.addLink(data);
+      })
+      .catch(err => {
+        console.error(err.message);
+      });
+  };
 
   return (
     <section className="url-form">
