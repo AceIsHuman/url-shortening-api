@@ -5,7 +5,6 @@ import URLForm from './components/URLForm';
 import Staircase from './components/Staircase';
 import BottomCTA from './components/BottomCTA';
 import Footer from './components/Footer';
-import Attribution from './components/Attribution';
 
 import './main.css';
 import useLocalStorage from './utils/useLocalStorage';
@@ -21,7 +20,6 @@ function App() {
       <Staircase links={links} />
       <BottomCTA />
       <Footer />
-      <Attribution />
     </div>
   );
 }
