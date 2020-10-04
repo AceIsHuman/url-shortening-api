@@ -25,11 +25,15 @@
   }
 
   .staircase {
-    max-width: @app-width-max;
+    width: @app-width-max;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: @screen-width-large) {
+      width: @app-width-large;
+    }
 
     .staircase-card {
       width: 32%;

@@ -2,12 +2,16 @@
   background-color: @palette-primary;
   background-image: url('./images/bg-shorten-desktop.svg');
   background-size: cover;
-  max-width: @app-width-max;
+  width: @app-width-max;
   margin: 0 auto;
   padding: 3rem;
   border-radius: 0.5rem;
   position: relative;
   z-index: 1;
+
+  @media (max-width: @screen-width-large) {
+    width: @app-width-large;
+  }
 
   #shortly-form {
     display: flex;
