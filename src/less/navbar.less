@@ -61,4 +61,25 @@
       width: 85%;
     }
   }
+
+  @media (max-width: @screen-width-small) {
+    width: @app-width-small;
+    font-size: 1rem;
+
+    .navigation {
+      width: 80%;
+
+      .links {
+        width: 60%;
+      }
+
+      .login-signup {
+        width: 40%;
+
+        button {
+          width: auto;
+        }
+      }
+    }
+  }
 }
