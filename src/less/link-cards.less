@@ -4,10 +4,6 @@
   width: @app-width-max;
   margin: 0 auto;
 
-  @media (max-width: @screen-width-large) {
-    width: @app-width-large;
-  }
-
   .link-card {
     display: flex;
     justify-content: space-between;
@@ -20,6 +16,10 @@
 
     .full-url {
       color: @palette-font-primary;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      margin-right: 1%;
     }
 
     .shortly-url-container {
@@ -43,6 +43,19 @@
           background-color: @palette-primary;
         }
       }
+    }
+  }
+
+  @media (max-width: @screen-width-large) {
+    width: @app-width-large;
+  }
+
+  @media (max-width: @screen-width-medium) {
+    width: @app-width-medium;
+
+    .link-card {
+      font-size: 1.2rem;
+      padding: 2%;
     }
   }
 }

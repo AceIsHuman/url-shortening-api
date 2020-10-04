@@ -3,13 +3,6 @@
   display: flex;
   max-width: @app-width-max;
 
-  @media (max-width: @screen-width-large) {
-    width: @app-width-large;
-
-    img {
-      width: 60%;
-    }
-  }
   .cta-container {
     width: 55%;
     display: flex;
@@ -26,5 +19,17 @@
   img {
     position: relative;
     right: -8rem;
+  }
+  
+  @media (max-width: @screen-width-large) {
+    width: @app-width-large;
+
+    img {
+      width: 60%;
+    }
+  }
+
+  @media (max-width: @screen-width-medium) {
+    width: @app-width-medium;
   }
 }

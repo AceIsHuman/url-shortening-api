@@ -31,10 +31,6 @@
     justify-content: space-between;
     align-items: center;
 
-    @media (max-width: @screen-width-large) {
-      width: @app-width-large;
-    }
-
     .staircase-card {
       width: 32%;
       padding: 1rem;
@@ -70,6 +66,15 @@
         position: relative;
         top: -10px;
       }
+    }
+
+    @media (max-width: @screen-width-large) {
+      width: @app-width-large;
+    }
+
+    @media (max-width: @screen-width-medium) {
+      width: @app-width-medium;
+      font-size: 1rem;
     }
   }
 }

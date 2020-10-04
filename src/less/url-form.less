@@ -9,10 +9,6 @@
   position: relative;
   z-index: 1;
 
-  @media (max-width: @screen-width-large) {
-    width: @app-width-large;
-  }
-
   #shortly-form {
     display: flex;
     justify-content: space-between;
@@ -22,18 +18,34 @@
     #url {
       width: 78%;
       padding: 1.5rem;
-      background-color: #FFFFFF;
+      background-color: #ffffff;
       color: @palette-font-secondary;
     }
-    
+
     #submit {
       width: 20%;
       background-color: @palette-secondary;
       padding: 1.5rem;
       text-align: center;
-      color: #FFFFFF;
+      color: #ffffff;
       &:hover {
         background-color: lighten(@palette-secondary, 10%);
+      }
+    }
+  }
+
+  @media (max-width: @screen-width-large) {
+    width: @app-width-large;
+  }
+
+  @media (max-width: @screen-width-medium) {
+    width: @app-width-medium;
+    padding: 3%;
+
+    #shortly-form {
+      border-radius: 0.5rem;
+      #url, #submit {
+        padding: 2%;
       }
     }
   }
