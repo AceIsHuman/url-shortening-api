@@ -44,7 +44,8 @@
 
     #shortly-form {
       border-radius: 0.5rem;
-      #url, #submit {
+      #url,
+      #submit {
         padding: 2%;
       }
     }
@@ -52,5 +53,28 @@
 
   @media (max-width: @screen-width-small) {
     width: @app-width-small;
+  }
+
+  @media (max-width: @screen-width-xsmall) {
+    background-image: url('./images/bg-shorten-mobile.svg');
+    padding: 6%;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+
+    #shortly-form {
+      flex-direction: column;
+
+      #url {
+        margin-bottom: 1.3rem;
+      }
+      #url,
+      #submit {
+        width: 100%;
+        border-radius: 0.2rem;
+        font-size: 1.5rem;
+        padding: 5%;
+      }
+    }
   }
 }
