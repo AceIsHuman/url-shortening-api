@@ -2,7 +2,6 @@ import React from 'react';
 
 function StaircaseCard(props) {
   const { icon, title, text, alt } = props;
-  console.log(icon);
   return (
     <div className="staircase-card">
       <span className="staircase-icon">
